@@ -12,6 +12,7 @@ on:
 
 jobs:
   update-formula:
+    name: Update Formula
     runs-on: ubuntu-latest
     env:
       ANSWERS: ${{ toJson(github.event.client_payload) }}
