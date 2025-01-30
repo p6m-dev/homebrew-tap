@@ -1,23 +1,23 @@
 class P6m < Formula
   desc "p6m CLI"
   homepage "https://github.com/p6m-dev/p6m-cli"
-  version "0.5.0"
+  version "0.6.0"
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/p6m-dev/p6m-cli/releases/download/v0.5.0/p6m-v0.5.0-linux-x86_64.tar.gz"
-      sha256 "4251a4cb6883bdfe4a16ad7ffff542d7079a0cddc1c9465e97c9cc1be7499576"
+      url "https://github.com/p6m-dev/p6m-cli/releases/download/v0.6.0/p6m-v0.6.0-linux-x86_64.tar.gz"
+      sha256 "084ea6ea3f3ad5eb5519f8cc58d457d357def01c4b8e39076c31c2cf3e31d6bd"
     end
   end
 
   on_macos do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/p6m-dev/p6m-cli/releases/download/v0.5.0/p6m-v0.5.0-macos-x86_64.tar.gz"
-      sha256 "ecdc3e2fab9cc2fa152cbf38db80e7028fec57e336598323e086189703df7630"
+      url "https://github.com/p6m-dev/p6m-cli/releases/download/v0.6.0/p6m-v0.6.0-macos-x86_64.tar.gz"
+      sha256 "e157ebd6362e8582d6ebf4a85afbfdf56425ffd63987dae67f958b189e7cfd41"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/p6m-dev/p6m-cli/releases/download/v0.5.0/p6m-v0.5.0-macos-arm64.tar.gz"
-      sha256 "ecdc3e2fab9cc2fa152cbf38db80e7028fec57e336598323e086189703df7630"
+      url "https://github.com/p6m-dev/p6m-cli/releases/download/v0.6.0/p6m-v0.6.0-macos-arm64.tar.gz"
+      sha256 "e157ebd6362e8582d6ebf4a85afbfdf56425ffd63987dae67f958b189e7cfd41"
     end
   end
 
