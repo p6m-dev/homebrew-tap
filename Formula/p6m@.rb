@@ -1,4 +1,4 @@
-class P6m < Formula
+class P6mAT0_7_5 < Formula
   desc "p6m CLI"
   homepage "https://github.com/p6m-dev/p6m-cli"
   version "0.7.5"
