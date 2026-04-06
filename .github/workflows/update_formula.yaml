@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: p6m-actions/token-exchange@v2
+
       - name: Generate base formula
         uses: archetect-actions/archetect-render@v1
         with:
@@ -42,8 +44,6 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "github-actions@users.noreply.github.com"
           git add -A
           git commit -m "Update ${{ github.event.client_payload.binary }} to ${{ github.event.client_payload.version }}"
           git push
